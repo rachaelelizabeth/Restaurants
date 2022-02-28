@@ -1,0 +1,194 @@
+body {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #000;
+	background-color: #fff;
+	padding-top: 120px;
+	margin-right: 60px;
+	margin-left: 60px;
+	
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+header {
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	padding: 5px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	background-color: rgb(32, 236, 185);
+	margin-bottom: 100px;
+}
+
+header h1 {
+	width: 64px;
+	padding-left: 20px;
+}
+
+
+header nav a {
+	padding-right: 20px;
+	margin-left: 10px;
+	height: 8px;
+}
+
+/* Restuarants Images Gallery 1*/
+
+.gallery-image {
+	height: 400px;
+	width: 100%;
+  height: auto;
+}
+
+.image-container {
+	margin: 10px;
+	position: relative;
+	width: 100%;
+	max-width: 420px;
+	max-height: 265px;
+	
+
+}
+
+.overlay {
+	position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #000;
+}
+
+.image-container:hover .overlay {
+	opacity: 0.3;
+}
+
+
+  .fa-user:hover {
+	color: #eee;
+  }
+
+.flex-container {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6px;
+  align-items: center;
+  justify-items: center;
+
+}
+
+p {
+	margin-bottom: 0em; margin-top: 0em;
+	
+}
+
+/* Restuarants Images Gallery 2 */
+
+h3 {
+	padding-top: 140px;
+	margin-left: 10px;
+}
+
+.gallery-image2 {
+	height: 550px;
+	width: 100%;
+  height: auto;
+}
+
+.image-container2 {
+	margin: 10px;
+	position: relative;
+	width: 100%;
+	max-width: 550px;
+	max-height: 375px;
+
+}
+
+.overlay {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #000;
+}
+
+.image-container2:hover .overlay {
+	opacity: 0.3;
+}
+
+  .fa-user:hover {
+	color: #eee;
+  }
+
+.flex-container2 {
+	margin-top: 20px;
+	display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+  align-items: center;
+  justify-items: center;
+
+}
+
+p {
+	margin-bottom: 0em; margin-top: 0em;
+}
+
+
+/* footer */
+
+footer {
+	overflow: hidden;
+	border-top:solid black;
+	color:rgb(85, 83, 83);
+}
+
+.footer {
+	margin-top: 140px;
+}
+
+footer p {
+	
+		float: left;
+		margin-right: 20px;
+		margin-top: 20px;
+	}
+
+footer nav a {
+	width: 16px;
+	margin-left: 20px;
+	margin-top:20px;
+	float: right;	
+}
+
+nav a.button {
+	width: 100px;
+	background-color:#000;
+	color:#fff;
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+}
+
+.nav-logo {
+height: 20px
+}
