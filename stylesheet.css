@@ -30,7 +30,7 @@ header {
 
 .header {
 	width:100%;
-	background-image:url("images/Thames.jpg");
+	background-image:url("Thames.jpg");
 	background-size: cover;
 	background-position: center center;
 }
