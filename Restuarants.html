@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="stylesheet.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href=“https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Montserrat:wght@100&family=Poiret+One&family=Poppins:wght@500&family=Quicksand:wght@300&display=swap” rel=“stylesheet”>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 
 <header class = "header">
     <h1>
-      Logo
+      Fernweh
     </h1>
     <nav>
-      <a href="search.html">
-        <i class="material-icons">search</i>
-      </a>
       <a href="Menu.html">
-        <i class="material-icons">menu</i>
+        <i class="material-icons"><img src="/Users/rachaeledwards/Desktop/Website project/menu.png"></i>
+      </a>
+      <a href="Search.html">
+        <i class="material-icons"><img src="/Users/rachaeledwards/Desktop/Website project/search.png"></i>
       </a>
       </nav>
   
@@ -32,12 +32,14 @@
     <body>   
 <!-- Gallery 1  -->
 <section>
-  <h4>New reviews</h4>
+  <h2><small>New reviews</small></h2>
 <div class="flex-container">
   <div class = "image-container">
     <img  class="gallery-image" src="/Users/rachaeledwards/Desktop/Website project/Images/sessionsartclub1.jpeg" alt="image1"/>
-  <div class ="overlay"></div>
-    <p>Sessions Art Club</p>
+  <div class ="overlay">
+    <i class="overlay-icon" style=color:white><img src="https://img.icons8.com/wired/100/000000/kawaii-steak.png"/></i>  
+  </div>
+    <h5>Sessions Art Club</h5>
   <p><small>An urban sanctuary that sits in an 18th century Grade 2 listed courthouse. </small></p>
   <p><small>Price- £££ Location - Clerkenwell </small>
     <i class="material-icons">location_on</i>
@@ -46,8 +48,10 @@
 
   <div class = "image-container">
     <img  class="gallery-image" src="/Users/rachaeledwards/Desktop/Website project/Images/bistrotheque1.jpeg" alt="image2"/>
-    <div class ="overlay"></div>
-  <p>Bistrotheque</p>
+    <div class ="overlay">
+      <i class="overlay-icon" style=color:white><img src="https://img.icons8.com/wired/100/000000/kawaii-french-fries.png"/></i>
+    </div>
+  <h5>Bistrotheque</h5>
   <p><small>Modern European restaurant inspired my French bistros, set in a white painted converted warehouse.</small></p>
   <p><small>Price- ££££ Location - Bethnal Green -  </small>
     <i class="material-icons">location_on</i>
@@ -56,8 +60,10 @@
 
   <div class = "image-container">
     <img  class="gallery-image" src="/Users/rachaeledwards/Desktop/Website project/Images/circolo2.jpeg" alt="image3"/>
-    <div class ="overlay"></div>
-  <p>Circolo Popolare</p>
+    <div class ="overlay">
+      <i class="overlay-icon" style=color:white><img src="https://img.icons8.com/ios/100/000000/kawaii-pizza.png"/></i>
+    </div>
+  <h5>Circolo Popolare</h5>
   <p><small>Atmospheric Italian eatery, opulently decorated with 20,000 bottles and serving Sicilian cusine.</small></p>
   <p><small>Price- £££ Location - Fitzrovia -  </small>
     <i class="material-icons">location_on</i>
@@ -73,7 +79,7 @@
     <div class = "image-container2">
       <img  class="gallery-image2" src="/Users/rachaeledwards/Desktop/Website project/Images/hoppers1.jpeg" alt="image4"/>
     <div class ="overlay"></div>
-      <p>Hoppers</p>
+      <h5>Hoppers</h5>
     <p><small>Sri Lanken resturant named after a breakfast staple. Casual spot which serves hoppers (bowl shaped rice pancakes), curries and dosa.  </small></p>
     <p><small>Price- ££ Location - Soho </small>
       <i class="material-icons">location_on</i>
@@ -83,7 +89,7 @@
     <div class = "image-container2">
       <img  class="gallery-image2" src="/Users/rachaeledwards/Desktop/Website project/Images/bancone2.jpeg" alt="image5"/>
       <div class ="overlay"></div>
-    <p>Bancone</p>
+    <h5>Bancone</h5>
     <p><small>Pasta joint in covent garden serving a variety of handmade pasta dishes, including Silk handkerchiefs with walnut butter.</small></p>
     <p><small>Price- ££ Location - Covent Garden -  </small>
       <i class="material-icons">location_on</i>
@@ -98,20 +104,33 @@
 </body>
 </html>
   
-        <footer class= "footer">
-          <p>About</p>
-          <p>Contact</p>
-          <p>Privacy</p>
-          <nav>
-            <a href="signup.html" class="button">Sign up</a>
-            <a href="http://facebook.com">
-              <img class="nav-logo" src="https://img.icons8.com/ios/50/000000/facebook--v1.png"/>
-            </a>
-            <a href="http://instagram.com">
-              <img class="nav-logo"  src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"/>
-            </a>
-            <a href="http://twitter.com">
-              <img class="nav-logo" src="https://img.icons8.com/ios/50/000000/twitter-squared.png"/>
-            </a>
-            </nav>
-            </footer>
+      
+            <footer>
+              <div class="row-footer">
+                  <div class="footer-right">
+                      <table class="legal">
+                          <tbody><tr>
+                              <th><a class = footer-text>About</a></th>
+                              <th><a class = footer-text>Contact</a></th>
+                              <th><a class = footer-text>Privacy</a></th>
+                          </tr>
+                      </tbody></table>
+                  </div>
+                      
+                  <div class="footer-center">
+                      <h4>LONDON'S BEST PLACES TO YOUR INBOX</h4>
+                      <h4></small>Sign up for emails here:</h4>
+                      <div class="buttons">
+                          <input type="signup" value="Sign Up">
+                      </div>
+                  </div>
+                      
+                  <div class="footer-left">
+                      <a href="https://twitter.com/" target="”_blank”" id="twitter"><img src="/Users/rachaeledwards/Desktop/Website project/icons8-twitter-squared-48.png"></a>
+                      <a href="https://instagram.com/" target="”_blank”" id="instagram"><img src="/Users/rachaeledwards/Desktop/Website project/icons8-instagram-48.png"></a>
+                      <a href="https://www.facebook.com/" target="”_blank”" id="facebook"><img src="/Users/rachaeledwards/Desktop/Website project/icons8-facebook-48.png"></a>
+                  </div>
+              </div>
+          </footer>
+
+         
