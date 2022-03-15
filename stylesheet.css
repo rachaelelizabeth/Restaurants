@@ -1,12 +1,8 @@
 body {
-	font-family: 'Work Sans', sans-serif;
+	font-family:'Montserrat', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	color: #000;
 	background-color: #fff;
-	padding-top: 120px;
-	margin-right: 60px;
-	margin-left: 60px;
 	
 }
 
@@ -17,9 +13,10 @@ a {
 
 header {
 	
-	position: fixed;
+	
 	top: 0;
 	left: 0;
+	padding: 20px 11px;
 
 	width: 100%;
 	padding: 5px;
@@ -27,8 +24,15 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items:center;
-	background-color: rgb(32, 236, 185);
-	margin-bottom: 100px;
+	margin-bottom: 40px;
+	background-image: url(Thames.jpg)
+}
+
+.header {
+	width:100%;
+	background-image:url("images/Thames.jpg");
+	background-size: cover;
+	background-position: center center;
 }
 
 header h1 {
@@ -36,6 +40,9 @@ header h1 {
 	padding-left: 20px;
 }
 
+h1 {
+	color: white;
+}
 
 header nav a {
 	padding-right: 20px;
@@ -44,6 +51,22 @@ header nav a {
 }
 
 /* Restuarants Images Gallery 1*/
+
+h2 {
+font-size: 40px;
+color: #57696D;
+margin-top: 40px;
+padding-left: 20px;
+
+}
+
+h5 {
+	font-size: 20px;
+	color: palevioletred;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	
+}
 
 .gallery-image {
 	height: 400px;
@@ -55,10 +78,9 @@ header nav a {
 	margin: 10px;
 	position: relative;
 	width: 100%;
-	max-width: 420px;
-	max-height: 265px;
+	max-width: 100%;
+	max-height: 100%;
 	
-
 }
 
 .overlay {
@@ -67,8 +89,8 @@ header nav a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   opacity: 0;
   transition: .3s ease;
   background-color: #000;
@@ -89,6 +111,9 @@ header nav a {
   grid-gap: 6px;
   align-items: center;
   justify-items: center;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 60px;
 
 }
 
@@ -100,8 +125,10 @@ p {
 /* Restuarants Images Gallery 2 */
 
 h3 {
-	padding-top: 140px;
-	margin-left: 10px;
+	padding-top: 20px;
+	margin-left: 20px;
+	font-size: 40px;
+	color: rgb(247, 187, 83);
 }
 
 .gallery-image2 {
@@ -121,20 +148,36 @@ h3 {
 
 .overlay {
 	position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: #000;
+            height: 100%;
+            width: 100%;
+            transition: .3s ease;
+            background-color: transparent;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0; 
+   
 }
 
-.image-container2:hover .overlay {
-	opacity: 0.3;
+.image-container:hover .overlay {
+	opacity: 0.8;
+	
 }
+
+
+.image-container .overlay-icon {
+            
+	position: absolute;
+            cursor: pointer;
+            left: 38%;
+			bottom: 50%;
+			
+
+	
+}
+
+
+
 
   .fa-user:hover {
 	color: #eee;
@@ -147,6 +190,7 @@ h3 {
   gap: 4px;
   align-items: center;
   justify-items: center;
+  margin-bottom: 140px;
 
 }
 
@@ -157,38 +201,88 @@ p {
 
 /* footer */
 
-footer {
+.row-footer {
 	overflow: hidden;
-	border-top:solid black;
-	color:rgb(85, 83, 83);
-}
-
-.footer {
-	margin-top: 140px;
-}
-
-footer p {
+	background-color: #57696D;
+	color: black;
+	bottom: 0;
+    width: 100%;
 	
-		float: left;
-		margin-right: 20px;
-		margin-top: 20px;
-	}
 
-footer nav a {
-	width: 16px;
-	margin-left: 20px;
-	margin-top:20px;
-	float: right;	
+	
 }
 
-nav a.button {
-	width: 100px;
-	background-color:#000;
-	color:#fff;
-	padding: 10px 20px 10px 20px;
-	border-radius: 5px;
+div.footer-center {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+	margin-left: 60px;
+	
 }
 
-.nav-logo {
-height: 20px
+div.footer-left {
+    color: white;
+    text-align: right;
+    display: inline-block;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    float: right;
+    padding: 1em;
+}
+
+
+div.footer-right {
+    color: white;
+    text-align: right;
+    display: inline-block;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 1em;
+	
+}
+
+table.legal {
+    color: white;
+	float: left;
+}
+
+
+
+.buttons {
+    text-align: center;
+    font: gray;
+	
+}
+
+.row-footer {
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-text {
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline; 
+
+}
+
+.footer-text a:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .responsive {
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div.responsive {
+        width: 100%; 
+    }
 }
